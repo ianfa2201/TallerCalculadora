@@ -1,0 +1,32 @@
+.container{
+    background-color: #001100;
+    right: 0;
+    bottom: 0;
+}
+#numeros{
+    margin: 1em 2em;
+}
+
+
+
+.col-sm-3{
+    flex-direction: row;
+    margin: 0 ;
+    float: left;
+}
+
+.col-sm-6{
+    float: left;
+}
+
+.btn{
+    width: 60%;
+}
+
+#operaciones{
+    margin: 1em 2em;
+}
+
+textarea {
+    resize: none;
+  }

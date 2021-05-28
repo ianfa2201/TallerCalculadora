@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
     <script src="js/calculadora.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <title>Document</title>
@@ -14,38 +15,47 @@
 <body>
 
     <div class="container">
-        <div class="row">
+        <div class="row" >
             <h1 class="col-sm-12 text-center">Calculadora</h1>
-            <div class="col-sm-12 justify-content-center">
-                <form action="index.html" method="GET" class="justify-content-center">
-                    <div class="col-sm-12">
-                        <label for="numero1"> Número 1</label>
-                        <br>
-                        <input type="number" name="numero1" placeholder="Ingrese un número" id="numero1">
-                    </div>
-                    <div class="col-sm-12">
-                        <br>
-                        <label for="numero2"> Número 2</label>
-                        <br>
-                        <input type="number" name="numero2" placeholder="Ingrese un número" id="numero2">
-                    </div>
-                    <div class="col-sm-12">
-                        <div class="operaciones">
-                            <div class="col-sm-3">
-                                <button class="btn btn-danger" id="suma">+</button>
-                            </div>
-                            <div class="col-sm-3">
-                                <button class="btn btn-danger" id="resta">-</button>
-                            </div>
-                            <div class="col-sm-3">
-                                <button class="btn btn-danger" id="multiplicacion">*</button>
-                            </div>
-                            <div class="col-sm-3">
-                                <button class="btn btn-danger" id="division">/xd</button>
-                            </div>
+            <div class="col-sm-12 justify-content-center" id="numeros">
+                    <div class="col-sm-12" id="numeros">
+                        <div class="col-sm-6" id="number1">
+                            <label for="numero1"> Número 1</label>
+                            <br>
+                            <input type="number" name="numero1" placeholder="Ingrese un número" id="numero1">
+                        </div>
+                        <div class="col-sm-6" id="number2">
+                            <label for="numero2"> Número 2</label>
+                            <br>
+                            <input type="number" name="numero2" placeholder="Ingrese un número" id="numero2">
                         </div>
                     </div>
-                </form>
+                    
+                    <div class="col-sm-12">
+                        
+                        <div class="operaciones">
+                            <br>
+                            <div class="col-sm-3">
+                                <button class="btn btn-danger" id="suma" onclick="sumar()">+</button>
+                            </div>
+                            <div class="col-sm-3">
+                                <button class="btn btn-danger" id="resta" onclick="restar()">-</button>
+                            </div>
+                            <div class="col-sm-3">
+                                <button class="btn btn-danger" id="multiplicacion" onclick="multiplicar()">*</button>
+                            </div>
+                            <div class="col-sm-3">
+                                <button class="btn btn-danger" id="division"onclick="dividir()">/</button>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="col-sm-12" id="resultado">
+                        <br>
+                        <label for="resultado">El resultado es:</label>
+                        <br>
+                        <textarea name="resultado" id="result" cols="30" rows="1" readonly ></textarea>
+                    </div>
             </div>
         </div>
     </div>
