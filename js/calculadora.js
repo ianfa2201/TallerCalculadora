@@ -30,7 +30,7 @@
         var b = document.getElementById("numero2").value;
         if(b == 0){
             document.getElementById("result").innerHTML= "No se puede dividir por cero";
-        }else {
+        } else {
             var r = a / b;
             document.getElementById("result").innerHTML= r;
         }
