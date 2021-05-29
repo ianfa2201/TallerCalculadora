@@ -1,16 +1,24 @@
 .container{
-    background-color: #131613;
+    background-color: #0a0a09;
     right: 0;
     bottom: 0;
 }
 .col-sm-3{
     flex-direction: row;
-    margin: 0 ;
+    padding-left: 4em;
     float: left;
 }
 
+h1{
+    color: white;
+}
+
 #number1{
-    padding-left: 20em;
+    padding-left: 24em;
+}
+
+#number2{
+    padding-left: 3em;
 }
 
 .col-sm-6{
@@ -18,17 +26,41 @@
 }
 
 .btn{
-    width: 60%;
+    width: 70%;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0.2em 1.2em;
+    border: 1px solid;
+    border-color: rgb(36, 34, 34);
+    position: relative;
+}
+
+.btn:hover {
+    background-color: rgb(238, 34, 34);  
+    box-shadow: 0 4px 16px rgb(197, 40, 13);
+    transition: all 0.2s ease;
+}
+
+.btn span{
+    color: white;
+    font-size: 22px;
 }
 
 #operaciones{
     margin: 1em 2em;
+    padding: 0 3em;
 }
 
 #resultado {
-    padding-left: 25em;
+    margin: 0 32em;
 }
 
 textarea {
     resize: none;
+}
+
+label{
+    color: beige;
 }
