@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/custom.css">
-    <script src="js/calculadora.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <script src="js/jquery.min.js"></script>
+    
     <script src="js/bootstrap.min.js"></script>
-    <title>Calculadora JavaScript</title>
+
+    <title>Calculadora JQuery</title>
 </head>
 
 <body>
@@ -37,16 +39,16 @@
                         <div class="operaciones">
                             <br>
                             <div class="col-sm-3">
-                                <button class="btn" id="suma" onclick="sumar()"><span>+</span></button>
+                                <button class="btn" id="suma"><span>+</span></button>
                             </div>
                             <div class="col-sm-3">
-                                <button class="btn" id="resta" onclick="restar()"><span>-</span></button>
+                                <button class="btn" id="resta"><span>-</span></button>
                             </div>
                             <div class="col-sm-3">
-                                <button class="btn" id="multiplicacion" onclick="multiplicar()"><span>*</span></button>
+                                <button class="btn" id="multiplicacion"><span>*</span></button>
                             </div>
                             <div class="col-sm-3">
-                                <button class="btn" id="division"onclick="dividir()"><span>/</span></button>
+                                <button class="btn" id="division"><span>/</span></button>
                             </div>
                             <br>
                         </div>
@@ -55,12 +57,12 @@
                         <br>
                         <label for="resultado">El resultado es:</label>
                         <br>
-                        <textarea name="resultado" id="result" cols="30" rows="1" readonly ></textarea>
+                        <textarea name="result" id="result" cols="30" rows="1" readonly ></textarea>
                     </div>
             </div>
         </div>
     </div>
-
+    <script src="js/calculadoraJQ.js"></script>
 </body>
 
 </html>

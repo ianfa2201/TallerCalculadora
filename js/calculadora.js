@@ -24,8 +24,10 @@ function restar() {
         document.getElementById("result").innerHTML="Debe llenar el campo a";
     } else if(b==""){
         document.getElementById("result").innerHTML="Debe llenar el campo b";
-    }else
-    document.getElementById("result").innerHTML= r;
+    }else{
+        document.getElementById("result").innerHTML= r;
+    }
+    
 }
 
 
